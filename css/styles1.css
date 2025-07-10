@@ -33,7 +33,7 @@ img {
     max-width: 100%;
 }
 .container {
-    width: 320px;
+    min-width: 320px;
     margin: 0 auto;
     padding: 0 16px
 }
@@ -62,6 +62,51 @@ img {
 .mobile-menu.is-open {
     opacity: 1;
     pointer-events: auto;
+}
+.navigation-mobile-menu{
+    margin-bottom: 168px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.navigation-mobile-menu a{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation-mobile-menu li:first-child a{
+    color:#404bbf;
+}
+.navigation-mobile-menu a:hover,
+.navigation-mobile-menu a:focus{
+color: #404bbf;
+}
+.contacts-list-mob-menu{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 24px;
+    margin-bottom: 48px;
+}
+.contacts-list-mob-menu a{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+.contacts-list-mob-menu a:hover,
+.contacts-list-mob-menu a:focus{
+    color: #404bbf;
 }
 .navigation{
     display: none;
@@ -572,10 +617,8 @@ gap: 40px;
     width: 288px;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
     padding: 72px 16px 24px 16px;
-    height: 623px;
     border-radius: 4px;
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .icon-close {
@@ -775,9 +818,7 @@ gap: 40px;
     outline: none;   }
 /*End Modal*/
 @media screen and (min-width:768px) {
-    .container{
-    width: 768px;
-    }
+
 
 .logo{
 margin-right: 120px;
@@ -911,7 +952,8 @@ margin-right: 120px;
     flex-wrap: wrap;
     gap: 24px;
     row-gap: 72px;
-align-items: flex-start;
+justify-content: flex-start;
+margin-left: 92px;
  }
  .logo-footer-container {
     width: 264px;
@@ -933,5 +975,14 @@ align-items: flex-start;
  .input-footer {
     width: 264px;
  }
-
+ .modal{
+    width: 408px;
+    padding: 72px 24px 24px 24px;
+ }
+.input-wrapper{
+    width: 360px;
+}
+.privacy-policy-text {
+    width: 338px;
+}
 }
