@@ -11,7 +11,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles1.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,37 +31,74 @@
     </svg>
     <header class="header">
       <div class="container header-container">
-        <a class="logo" href="./index.html"
-          >WEB<span class="logo-studio">Studio</span></a
-        >
-
+        <nav class="header-nav">
+          <a class="logo" href="./index.html"
+            >WEB<span class="logo-studio">Studio</span></a
+          >
+          <ul class="navigation">
+            <li><a class="nav-link active" href="./index.html">Studio</a></li>
+            <li><a class="nav-link" href="">Portfolio</a></li>
+            <li><a class="nav-link" href="">Contacts</a></li>
+          </ul>
+        </nav>
+        <address class="contacts">
+          <ul class="contacts-list">
+            <li>
+              <a class="contacts-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a class="contacts-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
         <button type="button" class="mobile-menu-btn">
           <svg class="icon-mobile-menu" width="24" height="24">
             <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
           </svg>
         </button>
         <div class="mobile-menu">
-          <nav class="header-nav">
-            <ul class="navigation">
-              <li><a class="nav-link active" href="./index.html">Studio</a></li>
-              <li><a class="nav-link" href="">Portfolio</a></li>
-              <li><a class="nav-link" href="">Contacts</a></li>
-            </ul>
-          </nav>
-          <address class="contacts">
-            <ul class="contacts-list">
-              <li>
-                <a class="contacts-link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+          <button type="button" class="icon-close">
+            <svg class="icon icon-modal-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close-icon"></use>
+            </svg>
+          </button>
+
+          <div class="social-media-mobile">
+            <ul class="social-media-list-mobile">
+              <li class="footer-media-list-item">
+                <a href="" class="social-link-footer">
+                  <svg class="icon footer-social-media" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagramicon"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a class="contacts-link" href="tel:+110001111111"
-                  >+11 (000) 111-11-11</a
-                >
+              <li class="footer-media-list-item">
+                <a href="" class="social-link-footer"
+                  ><svg class="icon footer-social-media" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twittericon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-media-list-item">
+                <a href="" class="social-link-footer"
+                  ><svg class="icon footer-social-media" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebookicon"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-media-list-item">
+                <a href="" class="social-link-footer"
+                  ><svg class="icon footer-social-media" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedinicon"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
       </div>
     </header>
@@ -135,7 +172,7 @@
       </section>
 
       <section class="section section-team">
-        <div class="container">
+        <div class="container container-team">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-member-photo">
@@ -611,9 +648,12 @@
               ><span class="checkbox-icon">
                 <svg class="checkmark" width="10" height="8">
                   <use href="./images/icons.svg#icon-accept-icon"></use>
-                </svg> </span
-              >I accept the terms and conditions of the
-              <a class="blue-text-checkbox">Privacy Policy</a>
+                </svg>
+              </span>
+              <p class="privacy-policy-text">
+                I accept the terms and conditions of the
+                <a class="blue-text-checkbox">Privacy Policy</a>
+              </p>
             </label>
           </div>
           <button class="modal-btn" type="submit">Send</button>
